@@ -397,7 +397,18 @@ mappings = {
             "entity_category": "diagnostic"
         }
     },
-
+  
+      "leak": {
+        "device_type": "binary_sensor",
+        "object_suffix": "leak",
+        "config": {
+            "device_class": "moisture",
+            "force_update": "true",
+            "payload_on": "Water Leak",
+            "payload_off": "Button Press",
+        }
+    },
+  
     "rssi": {
         "device_type": "sensor",
         "object_suffix": "rssi",
